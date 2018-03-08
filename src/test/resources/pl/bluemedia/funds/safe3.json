@@ -1,0 +1,47 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "type": "Polskie",
+            "name": "Fundusz Polski 1",
+            "value": 668,
+            "percent": 6.68
+        },
+        {
+            "id": 2,
+            "type": "Polskie",
+            "name": "Fundusz Polski 2",
+            "value": 666,
+            "percent": 6.66
+        },
+        {
+            "id": 3,
+            "type": "Polskie",
+            "name": "Fundusz Polski 3",
+            "value": 666,
+            "percent": 6.66
+        },
+        {
+            "id": 4,
+            "type": "Zagraniczne",
+            "name": "Fundusz Zagraniczny 1",
+            "value": 3750,
+            "percent": 37.5
+        },
+        {
+            "id": 5,
+            "type": "Zagraniczne",
+            "name": "Fundusz Zagraniczny 2",
+            "value": 3750,
+            "percent": 37.5
+        },
+        {
+            "id": 6,
+            "type": "Pieniężne",
+            "name": "Fundusz Pieniężny 1",
+            "value": 500,
+            "percent": 5
+        }
+    ],
+    "change": 0
+}
