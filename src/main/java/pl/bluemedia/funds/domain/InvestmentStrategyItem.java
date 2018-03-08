@@ -1,5 +1,7 @@
 package pl.bluemedia.funds.domain;
 
+import java.time.LocalDateTime;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,6 +20,8 @@ public class InvestmentStrategyItem {
     private StrategyType strategyType;
     private FundType fundType;
     private Integer splitPercentage;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
 
     public InvestmentStrategyItem(StrategyType strategyType, FundType fundType, Integer splitPercentage) {
         this.strategyType = strategyType;

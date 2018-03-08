@@ -1,5 +1,6 @@
 package pl.bluemedia.funds.domain;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +20,8 @@ public class InvestmentStrategy {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
     
     @OneToMany(cascade = CascadeType.ALL)
     private List<InvestmentStrategyItem> items = new ArrayList<>();
