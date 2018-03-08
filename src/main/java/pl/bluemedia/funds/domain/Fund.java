@@ -6,7 +6,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
 @Data
 @Entity
 public class Fund {
@@ -36,5 +38,9 @@ public class Fund {
         public String getName() {
             return name;
         }
+    }
+
+    public static Fund of(FundType type, String name) {
+        return new Fund(type, name);
     }
 }

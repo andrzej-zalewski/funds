@@ -17,28 +17,18 @@ public class InvestmentStrategyItem {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private StrategyType strategyType;
     private FundType fundType;
     private Integer splitPercentage;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
-    public InvestmentStrategyItem(StrategyType strategyType, FundType fundType, Integer splitPercentage) {
-        this.strategyType = strategyType;
+    public InvestmentStrategyItem(FundType fundType, Integer splitPercentage) {
         this.fundType = fundType;
         this.splitPercentage = splitPercentage;
+        this.createdAt = LocalDateTime.now();
     }
 
-    public enum StrategyType {
-        SAFE, BALANCED, AGRESSIVE;
-        
-        public static boolean contains(String value) {
-            for (StrategyType type : values()) {
-                if (type.name().equalsIgnoreCase(value)) {
-                    return true;
-                }
-            }
-            return false;
-        }
+    public static InvestmentStrategyItem of(FundType fundType, Integer splitPercentage) {
+        return new InvestmentStrategyItem(fundType, splitPercentage);
     }
 }
