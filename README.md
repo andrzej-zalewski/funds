@@ -8,7 +8,7 @@ develop
 
 # run
 
-mvn spring-boot:run
+./mvnw spring-boot:run
 
 warning: populate H2 database, one can use datasets from FundsApplicationClientTests 
 
